@@ -11,7 +11,6 @@ def get_starting_balance():
     except ValueError:
       print('Please enter a valid number.')
 
-
 def get_bet_amount(balance):
   while True:
     try:
@@ -28,10 +27,8 @@ def spin_reels():
   symbols = ['🍒', '🍋', '🔔', '⭐️', '🍉']
   return [random.choice(symbols) for _ in range(3)]
 
-
 def display_reels(reels):
   print(f'{reels[0]} | {reels[1]} | {reels[2]}')
-
 
 def calculate_payout(reels, bet):
   if reels[0] == reels[1] == reels[2]:
